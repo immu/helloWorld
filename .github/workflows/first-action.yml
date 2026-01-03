@@ -10,6 +10,7 @@ jobs:
       - name: EndOfWork
         run: echo "bye bye User"
   mySecondJob:
+    needs: myFirstJob
     runs-on: ubuntu-latest
     steps:
       - name: GreetUser
