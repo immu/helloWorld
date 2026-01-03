@@ -1,4 +1,4 @@
-name: Information 
+name: Info Workflow
 on: [workflow_dispatch, push]
 jobs:
   information:
