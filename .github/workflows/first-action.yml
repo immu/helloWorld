@@ -1,0 +1,11 @@
+# Dummy YAML for Hello World
+name: My First Workflow
+on: workflow_dispatch
+jobs:
+  myFirstJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GreetUser
+        run: echo "HowDay User"
+      - name: EndOfWork
+        run: echo "bye bye User"
