@@ -1,5 +1,5 @@
 # Dummy YAML for Hello World
-name: My First Workflow
+name: Sequential WorkFlow
 on: workflow_dispatch
 jobs:
   myFirstJob:
@@ -9,3 +9,10 @@ jobs:
         run: echo "HowDay User"
       - name: EndOfWork
         run: echo "bye bye User"
+  mySecondJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GreetUser
+        run: | 
+          echo "Wow"
+          echo "...and WOOOOOW"        
